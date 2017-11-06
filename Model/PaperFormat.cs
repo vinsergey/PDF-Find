@@ -1,4 +1,4 @@
-﻿namespace Model.Entities
+﻿namespace Model
 {
     public enum PaperFormat
     {

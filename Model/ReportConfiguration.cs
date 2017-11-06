@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Model.Entities
+namespace Model
 {
     public class ReportConfiguration : PrinterConfiguration
     {

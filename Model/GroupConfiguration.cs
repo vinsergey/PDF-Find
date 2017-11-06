@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Model.Entities
+namespace Model
 {
     public class GroupConfiguration : PrinterConfiguration
     {
@@ -23,17 +23,22 @@ namespace Model.Entities
             {
                 if (string.IsNullOrWhiteSpace(value))
                     throw new ArgumentException("Argument is null or whitespace", nameof(value));
-                if (value.Length < 6)
-                    throw new ArgumentException("Group name can'be less that 6 symbols", nameof(value));
+                if (value.Length != 6)
+                    throw new ArgumentException("Group name can'be other that 6 symbols", nameof(value));
                 _groupName = value;
             }
         }
 
         #endregion
 
+        public GroupConfiguration()
+        {
+            Reports = new HashSet<ReportConfiguration>();
+        }
+
         #region Methods
 
-        internal ReportConfiguration CreateReport(string reportName)
+        public ReportConfiguration CreateReport(string reportName)
         {
             if (string.IsNullOrWhiteSpace(reportName))
                 throw new ArgumentException("Argument is null or whitespace", nameof(reportName));
@@ -44,13 +49,7 @@ namespace Model.Entities
             if (!reportName.Substring(0, reportName.Length - 6).StartsWith(GroupName))
                 throw new ArgumentException($"{nameof(reportName)} is not from this group.");
 
-            var reportConfiguration = new ReportConfiguration
-            {
-                ReportName = reportName,
-                PrinterName = PrinterName,
-                Duplex = Duplex,
-                PaperFormat = PaperFormat
-            };
+            var reportConfiguration = new ReportConfiguration { ReportName = reportName };
 
             if (Reports.Count > 0)
             {
@@ -63,7 +62,6 @@ namespace Model.Entities
                     reportConfiguration.PaperFormat = first.PaperFormat;
             }
 
-            Reports.Add(reportConfiguration);
             return reportConfiguration;
         }
 

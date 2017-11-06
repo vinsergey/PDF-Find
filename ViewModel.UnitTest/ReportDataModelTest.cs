@@ -11,7 +11,7 @@ namespace ViewModel.UnitTest
         {
             try
             {
-                new ReportDataModel(null, null);
+                new ReportDataModel(null);
                 Assert.Fail();
             }
             catch (ArgumentNullException)

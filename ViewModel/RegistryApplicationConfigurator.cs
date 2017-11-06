@@ -4,6 +4,7 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using Microsoft.Win32;
+using System.Configuration;
 
 namespace ViewModel
 {
@@ -73,21 +74,23 @@ namespace ViewModel
             }
         }
 
-        ICommand IApplicationConfigurator.Save
-        {
-            get { throw new NotImplementedException(); }
-        } // new Prism.Commands.DelegateCommand();
+        public ICommand SaveCommand { get; }
 
         #endregion
 
-        public RegistryApplicationConfigurator(string regKey)
+        public RegistryApplicationConfigurator()
         {
-            _regKey = regKey;
+            SaveCommand = new Prism.Commands.DelegateCommand(Save);
+
+            var key = new AppSettingsReader().GetValue("RegKey", typeof(string)).ToString(); ;
+
+            _regKey = key;
 
             RegistryKey currentUser = Registry.CurrentUser;
-            RegistryKey pdfFindKey = currentUser.OpenSubKey(regKey);
+            RegistryKey pdfFindKey = currentUser.OpenSubKey(key);
 
-            if (pdfFindKey != null) {
+            if (pdfFindKey != null)
+            {
 
                 Language = pdfFindKey.GetValue("language").ToString();
                 ReaderPath = pdfFindKey.GetValue("readerPath").ToString();
@@ -95,7 +98,8 @@ namespace ViewModel
 
                 pdfFindKey.Close();
             }
-            else {
+            else
+            {
                 _language = "english";
                 _readerPath = "";
                 _dataBaseConnectionString = "";
@@ -107,7 +111,8 @@ namespace ViewModel
         private void OnPropertyChanged([CallerMemberName] string propertyName = null)
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
-        public void Save() {
+        private void Save()
+        {
             RegistryKey currentUser = Registry.CurrentUser;
             RegistryKey pdfFindKey = currentUser.OpenSubKey(_regKey, true) ?? currentUser.CreateSubKey(_regKey, RegistryKeyPermissionCheck.ReadWriteSubTree);
 

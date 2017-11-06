@@ -9,6 +9,6 @@ namespace ViewModel
         string ReaderPath { get; set; }
         string DataBaseConnectionString { get; set; }
 
-        ICommand Save { get;} 
+        ICommand SaveCommand { get;} 
     }
 }

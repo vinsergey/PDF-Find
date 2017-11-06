@@ -51,15 +51,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\FileReadingData.cs" />
-    <Compile Include="Entities\IFileOpeningData.cs" />
-    <Compile Include="Entities\GroupConfiguration.cs" />
-    <Compile Include="Entities\PaperFormat.cs" />
-    <Compile Include="Entities\PrinterConfiguration.cs" />
-    <Compile Include="PrinterConfigurationDataBase.cs" />
+    <Compile Include="FileReadingData.cs" />
+    <Compile Include="IFileOpeningData.cs" />
+    <Compile Include="GroupConfiguration.cs" />
+    <Compile Include="PaperFormat.cs" />
+    <Compile Include="PrinterConfiguration.cs" />
+    <Compile Include="DataBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Entities\ReportConfiguration.cs" />
-    <Compile Include="Entities\ReportPrintData.cs" />
+    <Compile Include="ReportConfiguration.cs" />
+    <Compile Include="ReportPrintData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

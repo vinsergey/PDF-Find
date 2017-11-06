@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Model.Entities
+namespace Model
 {
     public abstract class PrinterConfiguration
     {
         #region Properties
 
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
 
         public string PrinterName { get; set; }
 
