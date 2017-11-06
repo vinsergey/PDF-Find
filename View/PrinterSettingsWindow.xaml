@@ -3,20 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:View"
+        xmlns:res="clr-namespace:View.Properties"
         mc:Ignorable="d"
         Title="PDF Find - Settings Printer" Height="240" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Background="Coral">
     <Grid ShowGridLines="True">
         <ComboBox HorizontalAlignment="Left" Margin="314,26,0,0" VerticalAlignment="Top" Width="62" Height="24"/>
         <ComboBox HorizontalAlignment="Left" Margin="140,60,0,0" VerticalAlignment="Top" Width="236"/>
-        <CheckBox FontWeight="Bold" Content="Duplex mode " HorizontalAlignment="Left" Margin="22,122,0,0" VerticalAlignment="Top"/>
-        <RadioButton GroupName="CmbBox" FontWeight="Bold" Content="Printer from list:" HorizontalAlignment="Left" Margin="22,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,-0.84"/>
-        <RadioButton GroupName="CmbBox" FontWeight="Bold" Content="Manual printer:" HorizontalAlignment="Left" Margin="22,94,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="{x:Static res:Resources.DuplexMode}" FontWeight="Bold" HorizontalAlignment="Left" Margin="22,126,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="{x:Static res:Resources.PrinterFromList}" GroupName="CmbBox" FontWeight="Bold" HorizontalAlignment="Left" Margin="22,63,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,-0.84"/>
+        <RadioButton Content="{x:Static res:Resources.ManualPrinter}" GroupName="CmbBox" FontWeight="Bold" HorizontalAlignment="Left" Margin="22,93,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="140,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237"/>
-        <GroupBox FontWeight="Bold" Header="Settings" HorizontalAlignment="Left" Height="145" Margin="10,10,0,0" VerticalAlignment="Top" Width="380"/>
-        <Button Content="OK" FontWeight="Bold" HorizontalAlignment="Left" Margin="207,168,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
-        <Button Content="Cancel" FontWeight="Bold" HorizontalAlignment="Left" Margin="301,168,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
-        <Label Content="Papper format:" FontWeight="Bold" HorizontalAlignment="Left" Margin="212,24,0,0" VerticalAlignment="Top"/>
-
+        <GroupBox Header="{x:Static res:Resources.SettingsGroupBox}" FontWeight="Bold" HorizontalAlignment="Left" Height="145" Margin="10,10,0,0" VerticalAlignment="Top" Width="380"/>
+        <Button Content="{x:Static res:Resources.OkButton}" FontWeight="Bold" HorizontalAlignment="Left" Margin="207,168,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="{x:Static res:Resources.CancelButton}" FontWeight="Bold" HorizontalAlignment="Left" Margin="301,168,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Label Content="{x:Static res:Resources.PapperFormat}" FontWeight="Bold" HorizontalAlignment="Left" Margin="212,24,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

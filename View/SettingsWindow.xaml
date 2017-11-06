@@ -3,23 +3,23 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:View"
+        xmlns:res="clr-namespace:View.Properties"
         mc:Ignorable="d"
         Title="PDF Find" Height="260" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="Coral">
     <Window.Effect>
         <DropShadowEffect/>
     </Window.Effect>
     <Grid>
-        <Button Content="Application" FontWeight="Bold" HorizontalAlignment="Left" Margin="22,79,0,0" VerticalAlignment="Top" Width="99" Height="23" RenderTransformOrigin="0.533,-1.019"/>
+        <Button Content="{x:Static res:Resources.ApplicationButton}" FontWeight="Bold" HorizontalAlignment="Left" Margin="22,79,0,0" VerticalAlignment="Top" Width="99" Height="23" RenderTransformOrigin="0.533,-1.019"/>
         <ComboBox HorizontalAlignment="Left" Margin="321,19,0,0" VerticalAlignment="Top" Width="142"/>
-        <Button Content="Test Connection" FontWeight="Bold" HorizontalAlignment="Left" Margin="22,136,0,0" VerticalAlignment="Top" Width="99" Height="23" />
+        <Button Content="{x:Static res:Resources.TestConnectionButton}" FontWeight="Bold" HorizontalAlignment="Left" Margin="22,136,0,0" VerticalAlignment="Top" Width="99" Height="23" />
         <TextBox HorizontalAlignment="Left" Height="23" Margin="141,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="141,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" />
         <Button Content="Cancel" FontWeight="Bold" HorizontalAlignment="Left" Margin="388,182,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
         <Button Content="OK" FontWeight="Bold" HorizontalAlignment="Left" Margin="289,182,0,0" VerticalAlignment="Top" Width="75" Height="25" />
-        <Label Content="Database connection string:" FontWeight="Bold" HorizontalAlignment="Left" Margin="141,107,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.449,-0.487" Width="200"/>
-        <Label Content="Choose application:" FontWeight="Bold" HorizontalAlignment="Left" Margin="141,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.449,-0.487" Width="135"/>
-        <Label Content="Language:" FontWeight="Bold" HorizontalAlignment="Left" Margin="243,15,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.449,-0.487" Width="73"/>
+        <Label Content="{x:Static res:Resources.DatabaseConnectionString}" FontWeight="Bold" HorizontalAlignment="Left" Margin="141,107,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.449,-0.487" Width="200"/>
+        <Label Content="{x:Static res:Resources.TestConnectionButton}" FontWeight="Bold" HorizontalAlignment="Left" Margin="141,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.449,-0.487" Width="135"/>
+        <Label Content="Language:" FontWeight="Bold" HorizontalAlignment="Left" Margin="243,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.449,-0.487" Width="73"/>
 
     </Grid>
 </Window>

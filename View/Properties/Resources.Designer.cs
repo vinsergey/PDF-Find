@@ -19,7 +19,7 @@ namespace View.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,105 @@ namespace View.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Application.
+        /// </summary>
+        internal static string ApplicationButton {
+            get {
+                return ResourceManager.GetString("ApplicationButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string CancelButton {
+            get {
+                return ResourceManager.GetString("CancelButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose application:.
+        /// </summary>
+        internal static string ChooseApplication {
+            get {
+                return ResourceManager.GetString("ChooseApplication", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Database connection string:.
+        /// </summary>
+        internal static string DatabaseConnectionString {
+            get {
+                return ResourceManager.GetString("DatabaseConnectionString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Duplex mode.
+        /// </summary>
+        internal static string DuplexMode {
+            get {
+                return ResourceManager.GetString("DuplexMode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manual printer:.
+        /// </summary>
+        internal static string ManualPrinter {
+            get {
+                return ResourceManager.GetString("ManualPrinter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string OkButton {
+            get {
+                return ResourceManager.GetString("OkButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Papper format:.
+        /// </summary>
+        internal static string PapperFormat {
+            get {
+                return ResourceManager.GetString("PapperFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Printer from list:.
+        /// </summary>
+        internal static string PrinterFromList {
+            get {
+                return ResourceManager.GetString("PrinterFromList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string SettingsGroupBox {
+            get {
+                return ResourceManager.GetString("SettingsGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Test Connection.
+        /// </summary>
+        internal static string TestConnectionButton {
+            get {
+                return ResourceManager.GetString("TestConnectionButton", resourceCulture);
             }
         }
     }

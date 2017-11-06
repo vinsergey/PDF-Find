@@ -118,36 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ApplicationButton" xml:space="preserve">
-    <value>Application</value>
+    <value>Додаток</value>
   </data>
   <data name="CancelButton" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Відміна</value>
   </data>
   <data name="ChooseApplication" xml:space="preserve">
-    <value>Choose application:</value>
+    <value>Виберіть програму:</value>
   </data>
   <data name="DatabaseConnectionString" xml:space="preserve">
-    <value>Database connection string:</value>
+    <value>Рядок з'єднання з базою даних:</value>
   </data>
   <data name="DuplexMode" xml:space="preserve">
-    <value>Duplex mode</value>
+    <value>Режим двостороннього друку</value>
   </data>
   <data name="ManualPrinter" xml:space="preserve">
-    <value>Manual printer:</value>
+    <value>Ручний принтер:</value>
   </data>
   <data name="OkButton" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="PapperFormat" xml:space="preserve">
-    <value>Papper format:</value>
+    <value>Формат паперу:</value>
   </data>
   <data name="PrinterFromList" xml:space="preserve">
-    <value>Printer from list:</value>
+    <value>Принтер зі списку:</value>
   </data>
   <data name="SettingsGroupBox" xml:space="preserve">
-    <value>Settings</value>
+    <value>Налаштування</value>
   </data>
   <data name="TestConnectionButton" xml:space="preserve">
-    <value>Test Connection</value>
+    <value>Тест з’єднання</value>
   </data>
 </root>
