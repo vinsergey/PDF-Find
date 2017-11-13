@@ -9,17 +9,42 @@
     <Window.Effect>
         <DropShadowEffect/>
     </Window.Effect>
-    <Grid>
-        <Button Content="Application" FontWeight="Bold" HorizontalAlignment="Left" Margin="22,79,0,0" VerticalAlignment="Top" Width="99" Height="23" RenderTransformOrigin="0.533,-1.019"/>
-        <ComboBox HorizontalAlignment="Left" Margin="321,19,0,0" VerticalAlignment="Top" Width="142"/>
-        <Button Content="Test Connection" FontWeight="Bold" HorizontalAlignment="Left" Margin="22,136,0,0" VerticalAlignment="Top" Width="99" Height="23" />
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="141,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="141,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" />
-        <Button Content="Cancel" FontWeight="Bold" HorizontalAlignment="Left" Margin="388,182,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
-        <Button Content="OK" FontWeight="Bold" HorizontalAlignment="Left" Margin="289,182,0,0" VerticalAlignment="Top" Width="75" Height="25" />
-        <Label Content="Database connection string:" FontWeight="Bold" HorizontalAlignment="Left" Margin="141,107,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.449,-0.487" Width="200"/>
-        <Label Content="Choose application:" FontWeight="Bold" HorizontalAlignment="Left" Margin="141,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.449,-0.487" Width="135"/>
-        <Label Content="Language:" FontWeight="Bold" HorizontalAlignment="Left" Margin="243,15,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.449,-0.487" Width="73"/>
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+    </Window.Resources>
 
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="25*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="25*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="29*"></ColumnDefinition>
+            <ColumnDefinition Width="115*"></ColumnDefinition>
+            <ColumnDefinition Width="320*"></ColumnDefinition>
+            <ColumnDefinition Width="28*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Language:" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Margin="85,0,160,0"></Label>
+        <ComboBox Grid.Row="1" Grid.Column="2" Width="150" HorizontalAlignment="Right" Margin="7"></ComboBox>
+        <Label Content="Choose application:" Grid.Row="2" Grid.Column="2"></Label>
+        <Button Content="Application" Grid.Row="3" Grid.Column="1" Margin="7"></Button>
+        <TextBox Grid.Row="3" Grid.Column="2" Margin="7" VerticalContentAlignment="Center"></TextBox>
+        <Button Content="Test Connection" Grid.Row="5" Grid.Column="1" Margin="7"></Button>
+        <Label Content="Database connection string:" Grid.Row="4" Grid.Column="2"></Label>
+        <TextBox Grid.Row="5" Grid.Column="2" Margin="7"  VerticalContentAlignment="Center"></TextBox>
+        <Button Content="OK" Grid.Row="6" Grid.Column="2" Width="80" Margin="10,7,10,7"></Button>
+        <Button Content="Cancel" Grid.Row="6" Grid.Column="2" Width="80" Margin="200,7,10,7"></Button>
     </Grid>
 </Window>
