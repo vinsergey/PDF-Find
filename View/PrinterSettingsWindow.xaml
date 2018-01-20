@@ -37,7 +37,7 @@
             <ColumnDefinition Width="28*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Label Content="Paper format:" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Margin="140,7,0,8" Height="26"></Label>
+        <Label Content="Paper format:" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Margin="140,7,80,7"></Label>
         <ComboBox Grid.Row="1" Grid.Column="2" Width="70" Margin="0,7,7,7" HorizontalAlignment="Right"></ComboBox>
         <RadioButton Content="Printer from list:" GroupName="CmbBox" IsChecked="True" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Height="15" Margin="0,13" ></RadioButton>
         <ComboBox Grid.Row="2" Grid.Column="2" Margin="7"></ComboBox>

@@ -10,7 +10,8 @@ namespace Site.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+
+			return View();
         }
     }
 }
