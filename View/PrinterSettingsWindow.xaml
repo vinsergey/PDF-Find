@@ -39,9 +39,9 @@
 
         <Label Content="Paper format:" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Margin="140,7,80,7"></Label>
         <ComboBox Grid.Row="1" Grid.Column="2" Width="70" Margin="0,7,7,7" HorizontalAlignment="Right"></ComboBox>
-        <RadioButton Content="Printer from list:" GroupName="CmbBox" IsChecked="True" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Height="15" Margin="0,13" ></RadioButton>
+        <RadioButton Content="Printer from list:" GroupName="CmbBox" IsChecked="True" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Height="15" ></RadioButton>
         <ComboBox Grid.Row="2" Grid.Column="2" Margin="7"></ComboBox>
-        <RadioButton Content="Manual printer:" GroupName="CmbBox" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Height="15" Margin="0,13" ></RadioButton>
+        <RadioButton Content="Manual printer:" GroupName="CmbBox" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Height="15" ></RadioButton>
         <TextBox Grid.Row="3" Grid.Column="2" Margin="7" VerticalContentAlignment="Center"></TextBox>
         <CheckBox Content="Duplex mode" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" FontWeight="Bold"></CheckBox>
         <Button Content="OK" Grid.Row="5" Grid.Column="2" Width="80"  Margin="10,7,10,7"></Button>

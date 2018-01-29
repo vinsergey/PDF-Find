@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         Title="PDF Find" Height="260" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="Coral">
     <Window.Effect>
@@ -18,7 +17,7 @@
         </Style>
     </Window.Resources>
 
-    <Grid ShowGridLines="False">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="10*"></RowDefinition>
             <RowDefinition Height="40*"></RowDefinition>
